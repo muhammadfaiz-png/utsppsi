@@ -1,0 +1,21 @@
+[package]
+name = "lampung-commodity-hub-backend"
+version = "2.1.0"
+edition = "2021"
+authors = ["Muhammad Faiz", "Dr. Erliyan Redy Susanto, M.Kom"]
+description = "Refactored Rust Axum + SQLx + PostGIS Backend Engine for Lampung Commodity Hub"
+
+[dependencies]
+axum = { version = "0.7", features = ["macros", "json"] }
+tokio = { version = "1.39", features = ["full"] }
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "postgres", "uuid", "chrono", "rust_decimal"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.10", features = ["serde", "v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+sha2 = "0.10"
+hex = "0.4"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+

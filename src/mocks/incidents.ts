@@ -1,0 +1,45 @@
+import { IncidentRecord } from '@/types';
+
+export const mockIncidents: IncidentRecord[] = [
+  {
+    id: '#INC-TEMP-8412',
+    truckPlate: 'BE 8412 AA',
+    batchId: '#KOP-LBG-2026-0892',
+    type: 'TEMP_EXCURSION',
+    title: 'Excursion Suhu Kritis di Koridor JTTS KM 42',
+    severity: 'CRITICAL',
+    status: 'ACTIVE',
+    detectedValue: '+24.2°C (Batas Maks 22.0°C)',
+    locationLabel: 'JTTS KM 42+200 (Arah Selatan)',
+    iotDiagnostic: 'Auxiliary Power Unit Fault #E-09 (Kompresor Mati)',
+    createdAt: '16:20:15 WIB',
+  },
+  {
+    id: '#INC-TEMP-7719',
+    truckPlate: 'BE 7731 QA',
+    batchId: '#KAK-TGG-2026-0341',
+    type: 'TEMP_EXCURSION',
+    title: 'Peringatan Fluktuasi Suhu Reefer Gate',
+    severity: 'WARNING',
+    status: 'ACTIVE',
+    detectedValue: '+20.5°C (Ambang Batas 20.0°C)',
+    locationLabel: 'Bypass Soekarno-Hatta KM 12',
+    iotDiagnostic: 'Sensor Termostat Sirkulasi Udara Evaporator Rendah',
+    createdAt: '16:12:04 WIB',
+  },
+  {
+    id: '#INC-GEO-9021',
+    truckPlate: 'BE 9021 BB',
+    batchId: '#LAD-SKD-2026-0120',
+    type: 'ROUTE_DEVIATION',
+    title: 'Penyimpangan Geofence Jalur Logistik Resmi',
+    severity: 'WARNING',
+    status: 'MITIGATED',
+    detectedValue: 'Deviasi 450 meter dari Arteri Panjang',
+    locationLabel: 'Simpang Campang Raya, Sukabumi',
+    iotDiagnostic: 'GPS Drift terdeteksi karena sinyal seluler terhalang bukit',
+    createdAt: '15:58:30 WIB',
+    sopDispatchedAction: 'Navigasi Koreksi Terkirim ke Driver',
+  },
+];
+

@@ -1,0 +1,27 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next/
+/out/
+
+# Rust build artifacts
+/backend/target/
+
+# TypeScript & caches
+*.tsbuildinfo
+next-env.d.ts
+
+# Office temporary lock files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Environment & OS files
+.env
+.env*.local
+.DS_Store
+Thumbs.db
+
